@@ -14,7 +14,7 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
 
-    public function create()
+    public function create(Request $request)
     {
         return view('users.create');
     }
